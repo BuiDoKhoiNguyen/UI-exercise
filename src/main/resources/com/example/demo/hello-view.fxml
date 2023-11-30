@@ -1,16 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.demo.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="378.0" styleClass="childpan" stylesheets="@Stylesheet.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.UIController">
+    <children>
+        <FontAwesomeIcon fill="#545353" iconName="BELL" layoutX="345.0" layoutY="27.0" size="1.3em" />
+        <Label layoutX="279.0" layoutY="13.0" text="Status Sale" textFill="#545353">
+            <font>
+                <Font name="Calibri Bold" size="13.0" />
+            </font>
+        </Label>
+        <Circle fill="WHITE" layoutX="37.0" layoutY="165.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+            <effect>
+                <DropShadow color="#c6c4c4" />
+            </effect>
+        </Circle>
+        <TextField alignment="TOP_LEFT" layoutX="68.0" layoutY="150.0" prefHeight="30.0" prefWidth="162.0" styleClass="txtfld" text="Hello, how are you ?" />
+        <TextField alignment="TOP_LEFT" layoutX="202.0" layoutY="220.0" prefHeight="30.0" prefWidth="162.0" styleClass="txt-fld" text="I'm fine, thank you, and you ?" />
+        <Circle fill="WHITE" layoutX="37.0" layoutY="298.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+            <effect>
+                <DropShadow color="#c6c4c4" />
+            </effect>
+        </Circle>
+        <TextField alignment="TOP_LEFT" layoutX="68.0" layoutY="283.0" prefHeight="30.0" prefWidth="94.0" styleClass="txtfld" text="I'm OK" />
+        <Label layoutX="25.0" layoutY="196.0" text="18:30" textFill="#9a9696">
+            <font>
+                <Font name="Calibri Bold" size="10.0" />
+            </font>
+        </Label>
+        <Label layoutX="25.0" layoutY="328.0" text="18:35" textFill="#9a9696">
+            <font>
+                <Font name="Calibri Bold" size="10.0" />
+            </font>
+        </Label>
+        <Pane layoutX="8.0" layoutY="500.0" prefHeight="46.0" prefWidth="367.0" style="-fx-background-color: white;">
+            <effect>
+                <DropShadow blurType="ONE_PASS_BOX" color="#bcb9b9" />
+            </effect>
+            <children>
+                <FontAwesomeIcon fill="#b3b4b9" iconName="PLUS" layoutX="16.0" layoutY="30.0" size="1.5em" />
+                <TextField layoutX="35.0" layoutY="10.0" prefHeight="25.0" prefWidth="252.0" promptText="Type Message" style="-fx-background-color: transparent;" text="Your message" />
+                <FontAwesomeIcon fill="#b3b4b9" iconName="SEND" layoutX="293.0" layoutY="26.0" />
+            <Button layoutX="317.0" layoutY="7.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="24.0" styleClass="mic" />
+            </children>
+        </Pane>
+      <AnchorPane layoutY="37.0" prefHeight="81.0" prefWidth="378.0" style="-fx-background-color: #ffffff; -fx-background-radius: 30 30 0 0;">
+         <children>
+            <Circle fill="WHITE" layoutX="37.0" layoutY="41.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <effect>
+                  <DropShadow color="#c6c4c4" />
+               </effect>
+            </Circle>
+            <Label layoutX="78.0" layoutY="18.0" text="Bùi Đỗ Khôi Nguyên" textFill="#404040">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="78.0" layoutY="51.0" text="Online" textFill="#9a9696">
+               <font>
+                  <Font name="Calibri Bold" size="10.0" />
+               </font>
+            </Label>
+            <Pane layoutX="113.0" layoutY="50.0" prefHeight="15.0" prefWidth="16.0" styleClass="noit-icon" />
+            <Button layoutX="295.0" layoutY="27.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="24.0" styleClass="call" />
+            <Button layoutX="332.0" layoutY="27.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="24.0" styleClass="videocall" />
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
