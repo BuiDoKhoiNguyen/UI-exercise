@@ -51,7 +51,7 @@
 .mic{
     -fx-graphic: url('mic.png');
     -fx-background-radius: 100;
-    -fx-background-color: #9797979;
+    -fx-background-color: #979797;
 }
 
 .call{

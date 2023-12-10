@@ -74,5 +74,6 @@
             <Button layoutX="332.0" layoutY="27.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="24.0" styleClass="videocall" />
          </children>
       </AnchorPane>
+      <Button layoutX="2.0" layoutY="2.0" mnemonicParsing="false" onAction="#switchToScene1" style="-fx-background-color: transparent;" text="&lt;&lt;" />
     </children>
 </AnchorPane>
